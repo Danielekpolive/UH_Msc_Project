@@ -1,0 +1,10 @@
+import pandas as pd
+#loading dataset
+file_path = r"C:\Users\danie\OneDrive\UH_Project\Data\supervidor_supervisee_data.xlsx"
+
+supervisors_df = pd.read_excel(file_path, sheet_name="Supervisors")
+supervisees_df = pd.read_excel(file_path, sheet_name="Supervisees")
+
+#Display top data for confirmation
+print("Supervisors:\n", mentors_df.head())
+print("\nSupervisees:\n", mentees_df.head())
